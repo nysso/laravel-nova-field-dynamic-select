@@ -24,8 +24,9 @@ class DynamicSelect extends Field
     {
         $this->meta = parent::meta();
         return array_merge([
-            'options' => $this->getOptions($this->dependentValues),
-            'dependsOn' => $this->getDependsOn(),
+            'options'      => $this->getOptions($this->dependentValues),
+            'placeholder'  => $this->getPlaceholder(),
+            'dependsOn'    => $this->getDependsOn(),
             'dependValues' => $this->dependentValues,
         ], $this->meta);
     }
