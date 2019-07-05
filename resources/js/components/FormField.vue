@@ -94,8 +94,7 @@
                     value: this.value,
                     field: this.field
                 });
-                this.options = (await Nova.request().post("/nova-vendor/dynamic-select/options", {
-                    resource: this.resourceName,
+                this.options = (await Nova.request().post("/nova-vendor/dynamic-select/options/" + this.resourceName, {
                     attribute: this.field.attribute,
                     depends: this.getDependValues(dependsOnValue.value, dependsOnValue.field.attribute.toLowerCase())
                 })).data.options;
