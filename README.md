@@ -1,9 +1,10 @@
 # Dynamic select field for Laravel Nova
 
-This field allows you to dynamically fill contents of a select based on values in other dynamic select fields.
+* Added support for Nova >= 2.0.1
 
-Field is based on [nova-belongs-to-dependency]{https://novapackages.com/packages/manmohanjit/nova-belongs-to-dependency}
-but instead of selecting model, you can select custom values.
+* This field allows you to dynamically fill contents of a select based on values in other dynamic select fields.
+
+Package forked from https://github.com/hubertnnn/laravel-nova-field-dynamic-select
 
 ### Usage
 Class have 2 special methods on top of default Select from Laravel Nova.
@@ -29,6 +30,7 @@ public function fields(Request $request)
 
             DynamicSelect::make('Provider', 'provider')
                 ->options(['PR' => 'Premium', 'ST' => 'Standard'])
+                ->placeholder('choose a value')
                 ->rules('required')
             ,
 

@@ -11,13 +11,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Hubertnnn\\LaravelNova\\Fields\\DynamicSelect\\": "src/"
+            "Nysso\\LaravelNova\\Fields\\DynamicSelect\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Hubertnnn\\LaravelNova\\Fields\\DynamicSelect\\FieldServiceProvider"
+                "Nysso\\LaravelNova\\Fields\\DynamicSelect\\FieldServiceProvider"
             ]
         }
     },
