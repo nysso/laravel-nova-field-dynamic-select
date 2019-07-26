@@ -18,12 +18,11 @@ class OptionsController extends Controller
         $field = $fields->findFieldByAttribute($attribute);
 
         /** @var DynamicSelect $field */
-        $options = $field->getOptions($dependValues);
-        $placeholder = $field->getPlaceholder();
-
         return [
-            'options'     => $options,
-            'placeholder' => $placeholder,
+            'options'      => $field->getOptions($dependValues),
+            'placeholder'  => $field->getPlaceholder(),
+            'noResultText' => $field->getNoResultText(),
+            'showLabels'   => $field->getShowLabels()
         ];
     }
 }
