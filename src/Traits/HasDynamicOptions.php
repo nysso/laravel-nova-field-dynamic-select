@@ -1,6 +1,6 @@
 <?php
 
-namespace Hubertnnn\LaravelNova\Fields\DynamicSelect\Traits;
+namespace Nysso\LaravelNova\Fields\DynamicSelect\Traits;
 
 use Closure;
 

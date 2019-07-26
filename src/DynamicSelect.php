@@ -1,9 +1,9 @@
 <?php
 
-namespace Hubertnnn\LaravelNova\Fields\DynamicSelect;
+namespace Nysso\LaravelNova\Fields\DynamicSelect;
 
-use Hubertnnn\LaravelNova\Fields\DynamicSelect\Traits\DependsOnAnotherField;
-use Hubertnnn\LaravelNova\Fields\DynamicSelect\Traits\HasDynamicOptions;
+use Nysso\LaravelNova\Fields\DynamicSelect\Traits\DependsOnAnotherField;
+use Nysso\LaravelNova\Fields\DynamicSelect\Traits\HasDynamicOptions;
 use Laravel\Nova\Fields\Field;
 
 class DynamicSelect extends Field
