@@ -7,7 +7,9 @@ use Closure;
 trait HasDynamicOptions
 {
     protected $options = [];
-    protected $placeholder = 'Pick a value';
+    protected $placeholder;
+    protected $noResultText;
+    protected $showLabels;
 
     public function options($options)
     {
@@ -43,5 +45,27 @@ trait HasDynamicOptions
     public function getPlaceholder()
     {
         return $this->placeholder;
+    }
+
+    public function noResultText($noResultText)
+    {
+        $this->noResultText = $noResultText;
+        return $this;
+    }
+
+    public function getNoResultText()
+    {
+        return $this->noResultText;
+    }
+
+    public function showLabels($show)
+    {
+        $this->showLabels = $show;
+        return $this;
+    }
+
+    public function getShowLabels()
+    {
+        return $this->showLabels;
     }
 }
